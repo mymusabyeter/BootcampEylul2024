@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selectors 2</title>
     <style>
-        .onemli{
-        border-left: 10px solid green;
-        }
-        .onemsiz{
-        border-left: 10px solid rgb(46, 184, 248);
-        }
-        .onemsiz ~ li{
-        border-left: 10px solid rgb(255, 0, 0);
+        .onemli {
+            border-left: 10px solid green;
         }
 
+        .onemli+li {
+            /* sonra gelen */
+            border-left: 10px solid rgb(46, 184, 248);
+        }
+
+        .onemsiz~li {
+            /* sonra gelenler */
+            border-left: 10px solid rgb(255, 0, 0);
+        }
     </style>
 </head>
+
 <body>
     <ul>
         <li>Lorem, ipsum.</li>
@@ -31,4 +36,5 @@
         <li>Lorem, ipsum.</li>
     </ul>
 </body>
+
 </html>
