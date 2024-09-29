@@ -1,0 +1,9 @@
+* domain ve hosting alma
+* damaini nameserver'lara yönlendirme
+* plesk & cpanel kullanımı
+* dosya yöneticisi kullanımı
+* filezilla kullanarak ftp yoluyla dosta gönderme / alma
+* hosting'e panelden ücretsiz ssl kurulumu (https://)
+* sbdomain oluşturma
+
+İleride Yapalım Dedik: Domaini ya da subdomaini githuba bağlama
