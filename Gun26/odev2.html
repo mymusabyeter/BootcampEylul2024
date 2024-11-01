@@ -2,3 +2,56 @@
 Bir kare yapın. Bu kareye tıklayınca sayfa üzerinde rastgele bir yere
 gitsin. (ipuçları: css'teki mutlak pozisyonlamadan yararlanılabilir.)
 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        div {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            border-radius: 50%;
+            background-color: red;
+            transition: 2s all ease-in-out;
+        }
+
+        div.left-top {
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sonuc"></div>
+
+    <script>
+        const sonuc = document.getElementById("sonuc");
+
+        sonuc.textContent = ""
+
+        sonuc.addEventListener("mouseover", function () {
+            sonuc.classList.add("left-top");
+        });
+        if (sonuc.getElementsByClassName("left-top")) {
+
+            sonuc.addEventListener("mouseover", function () {
+                sonuc.classList.remove("left-top");
+            });
+        }
+
+    </script>
+</body>
+
+</html>
