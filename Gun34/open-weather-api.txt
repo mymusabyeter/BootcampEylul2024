@@ -1,0 +1,1 @@
+https://api.openweathermap.org/data/2.5/weather?q={ŞEhir}&appid={5ea7c0fcab1e1e7b1b88f4ceda647a51}&units=metric&lang=tr
